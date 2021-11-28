@@ -1,0 +1,131 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+/*版心*/
+.content{
+	width: 1200px;
+	margin: 0 auto;
+}
+nav{
+	position: fixed;
+    z-index: 10;
+   	left: 0;
+    top: 0.05rem;
+    width: 100%;
+    overflow: hidden;
+}
+nav:before{
+    content: "";
+   	display: block;
+  	position: absolute;
+    left: 0;
+    top: -.05rem;
+    right: 0;
+    height: 80px;
+    background: url(https://www.tsinghua.edu.cn/image/head-bg.png) center repeat-x;
+    background-size: auto 99%;
+}
+nav .wal{
+	min-height: 1.1rem;
+    position: relative;
+    max-width: 100%;
+    margin: 0 .4rem;
+}
+nav ul{
+	overflow: hidden;
+	float: right;
+}
+nav li{
+	float: left;
+	margin-left: 40px;
+	height: 80px;
+	text-align: center;
+}
+nav li a{
+	color: white;
+	line-height: 80px;
+}
+nav li a:hover{
+	color: orange;
+}
+#nav_left{
+	float: left;
+	color: white;
+	line-height: 80px;
+	font-size: 24px;
+	margin-left: 100px;
+}
+#nav_right{
+	margin-right: 100px;
+}
+#main{
+	overflow: hidden;
+	margin-top: 80px;
+}
+#title{
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+#title h2{
+    font-size: 40px;
+    line-height: 60px;
+    font-family: "华文新魏";
+}
+.choice{
+    float: left;
+    margin-left: 80px;
+}
+.choice span{
+    font-size: 20px;
+    color: white;
+}
+.choice select{
+    height: 34px;
+    outline: none;
+}
+#lookup{
+    float: left;
+    margin-left: 50px;
+    width: 50px;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    border: 1px solid black;
+    cursor: pointer;
+    color: white;
+    background-color: #d681bd;
+}
+#lookup:hover{
+    background-color: red;
+}
+.clear{
+    clear: both;
+}
+#contain{
+    margin-top: 30px;
+    margin-bottom: 80px;
+}
+#contain table{
+    background-color: #cce8d9ad;
+}
+#contain tr, #contain td, #contain table, #contain tt{
+    border: 2px solid black;
+    text-align: center;
+    border-collapse: collapse;
+}
+#contain th{
+    height: 60px;
+    text-align: center;
+}
+#contain td{
+    width: 200px;
+    height: 70px;
+}

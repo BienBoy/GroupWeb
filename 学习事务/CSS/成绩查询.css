@@ -1,0 +1,271 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+/*版心*/
+.content{
+	width: 1200px;
+	margin: 0 auto;
+}
+nav{
+	position: fixed;
+    z-index: 10;
+   	left: 0;
+    top: 0.05rem;
+    width: 100%;
+    overflow: hidden;
+}
+nav:before{
+    content: "";
+   	display: block;
+  	position: absolute;
+    left: 0;
+    top: -.05rem;
+    right: 0;
+    height: 80px;
+    background: url(https://www.tsinghua.edu.cn/image/head-bg.png) center repeat-x;
+    background-size: auto 99%;
+}
+nav .wal{
+	min-height: 1.1rem;
+    position: relative;
+    max-width: 100%;
+    margin: 0 .4rem;
+}
+nav ul{
+	overflow: hidden;
+	float: right;
+}
+nav li{
+	float: left;
+	margin-left: 40px;
+	height: 80px;
+	text-align: center;
+}
+nav li a{
+	color: white;
+	line-height: 80px;
+}
+nav li a:hover{
+	color: orange;
+}
+#nav_left{
+	float: left;
+	color: white;
+	line-height: 80px;
+	font-size: 24px;
+	margin-left: 100px;
+}
+#nav_right{
+	margin-right: 100px;
+}
+#main{
+	overflow: hidden;
+	margin-top: 80px;
+}
+#left{
+	float: left;
+	margin-left: 140px;
+}
+#title{
+	height: 30px;
+    line-height: 30px;
+    color: #3083c7;
+    font-size: 22px;
+    text-align: center;
+    margin: 40px 0;
+}
+#title i{
+	font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    display: inline-block;
+    margin: 0 20px;
+    line-height: 30px;
+}
+#title a{
+	color: #fe8500;
+}
+#lookup li{
+	margin-bottom: 40px;
+	text-align: center;
+	clear: both;
+    float: left;
+    width: 100%;
+    position: relative;
+}
+#lookup span{
+	float: left;
+	width: 125px;
+    text-align: right;
+    line-height: 30px;
+}
+#lookup select{
+	height: 34px;
+	width: 280px;
+	border-radius: 5px;
+    border: solid 1px #a9a9a9;
+    padding: 0 5px;
+    outline: 0;
+}
+#lookup input{
+	height: 34px;
+	width: 270px;
+	border-radius: 5px;
+    border: solid 1px #a9a9a9;
+    padding: 0 5px;
+    outline: 0;
+}
+#buttons div{
+	float: left;
+	width: 70px;
+	height: 35px;
+	text-align: center;
+	line-height: 35px;
+	margin-left: 90px;
+	border: 1px solid black;
+	border-radius: 10%;
+	cursor: pointer;
+	background-color: #01ADEF;
+	color: white;
+}
+#buttons div a{
+	color: white;
+}
+#submit{
+	margin-left:90px !important;
+}
+#right{
+	float: left;
+	font-size: 18px;
+    padding: 8px 0 20px 40px;
+    margin-bottom: 30px;
+    width: 220px;
+    margin-left: 40px;
+    text-align: left;
+    position: relative;
+}
+#right i{
+	display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-color: #fe8500
+}
+#right #right_title{
+	font-size: 22px;
+	margin: 30px;
+	width: 300px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	padding: 10px 0;
+	border-top: 1px solid #DDDDDD;
+	border-bottom: 1px solid #DDDDDD;
+}
+#right #right_title span{
+	margin-left: 10px;
+}
+#text{
+	margin: 30px;
+	width: 300px;
+}
+/*提示框遮罩样式 */
+.message-dialog-conver {
+    width: 100%;
+    height: 100%;
+    z-index: 500;
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+	text-align: end;
+}
+/* 主体样式 */
+.message-dialog-main {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    top: 50%;
+    z-index: 600;
+    width: 100%;
+    left: 100%;
+    transform: translate(-100%, -100%);
+}
+/* 标题样式 */
+.message-dialog-header {
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 255);
+    width: 86%;
+    height: 2rem;
+    line-height: 2rem;
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
+}
+/* 内容样式 */
+.message-dialog-content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 86%;
+    background: rgba(255, 255, 255, 255);
+    padding: 0.5rem 0;
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3)
+}
+/* 底部样式 */
+.message-dialog-footer {
+    width: 86%;
+    height: 2.5rem;
+}
+.message-dialog-btn {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 255);
+    border-bottom-left-radius: 0.6rem;
+    border-bottom-right-radius: 0.6rem;
+    border-top: 0.01rem solid #d5d6d7;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+.message-dialog-sure,.message-dialog-cancel {
+    display: block;
+   	width: 10%;
+    text-align: center;
+    cursor: pointer;
+    height: 2rem;
+    line-height: 2rem;
+    border-radius: 0.3rem;
+    margin: 0 1rem;
+    color: #ffff;
+    border: none;
+    letter-spacing: .6px;
+    background-color: #d6d6d6;
+}     
+.message-dialog-sure {
+    color: #212122;
+    border: none;
+    background-color: #449d44;
+}   
+.message-dialog-close {
+    cursor: pointer;
+    color: #347d4a;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+}

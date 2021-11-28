@@ -1,0 +1,420 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+ul{
+	list-style: none;
+}
+/*版心*/
+.content{
+	width: 1200px;
+	margin: 0 auto;
+}
+nav{
+	position: fixed;
+    z-index: 10;
+   	left: 0;
+    top: 0.05rem;
+    width: 100%;
+    overflow: hidden;
+}
+nav:before{
+    content: "";
+   	display: block;
+  	position: absolute;
+    left: 0;
+    top: -.05rem;
+    right: 0;
+    height: 80px;
+    background: url(https://www.tsinghua.edu.cn/image/head-bg.png) center repeat-x;
+    background-size: auto 99%;
+}
+nav .wal{
+	min-height: 1.1rem;
+    position: relative;
+    max-width: 100%;
+    margin: 0 .4rem;
+}
+nav ul{
+	overflow: hidden;
+	float: right;
+}
+nav li{
+	float: left;
+	margin-left: 40px;
+	height: 80px;
+	text-align: center;
+}
+nav li a{
+	color: white;
+	line-height: 80px;
+}
+nav li a:hover{
+	color: orange;
+}
+#nav_left{
+	float: left;
+	color: white;
+	line-height: 80px;
+	font-size: 24px;
+	margin-left: 100px;
+}
+#nav_right{
+	margin-right: 100px;
+}
+#main{
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+#title{
+	text-align: center;
+}
+#title h1{
+	display: inline-block;
+	cursor: default;
+	font-family: "华文琥珀";
+	font-size: 40px;
+	font-weight: normal;
+	color: #f9f0e7;
+}
+#class{
+	margin-top: 30px;
+}
+#class ul{
+	overflow: hidden;
+}
+#class li{
+	float: left;
+	
+}
+#class li a{
+	color: black;
+	display: inline-block;
+	margin: 10px;
+	padding: 8px 15px;
+	background: #93DB70BA;
+	border: 1px solid rgba(0,0,0,0.15);
+	border-radius: 4px;
+	transition: all 0.3s ease-out;
+	box-shadow:
+	inset 0 1px 0 rgba(255,255,255,0.5),
+	0 2px 2px rgba(0,0,0,0.3),
+	0 0 4px 1px rgba(0,0,0,0.2);
+	text-decoration: none;
+	text-shadow: 0 1px rgba(255,255,255,0.7);
+	font-weight: bold;
+}
+#class li a:hover{
+	background: #FFFF00BA;
+}
+#class .now a{
+	background-color: #76FBFFBA;
+}
+#left{
+	margin-left: 40px;
+}
+#class #publish{
+	color: black;
+	font-weight: bold;
+	float: right;
+	margin: 10px;
+	margin-right: 100px;
+	padding: 8px 15px;
+	background: #93DB70BA;
+	border: 1px solid rgba(0,0,0,0.15);
+	border-radius: 4px;
+	transition: all 0.3s ease-out;
+	box-shadow:
+	inset 0 1px 0 rgba(255,255,255,0.5),
+	0 2px 2px rgba(0,0,0,0.3),
+	0 0 4px 1px rgba(0,0,0,0.2);
+	text-decoration: none;
+	text-shadow: 0 1px rgba(255,255,255,0.7);
+}
+#class #publish:hover{
+	cursor: pointer;
+	background-color: #FFFF00BA;
+}
+.black_overlay{
+	display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index:100;
+    -moz-opacity: 0.8;
+    opacity:.80;
+    filter: alpha(opacity=88);
+}
+.pop_win {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 23%;
+    width: 800px;
+    height: 600px;
+    padding: 10px;
+    border: 2px solid rebeccapurple;
+    background-color: white;
+    z-index:200;
+    overflow: auto;
+}
+#new_top{
+	width: 800px;
+	height: 40px;
+	text-align: center;
+	position: relative;
+}
+#new_top h2{
+	display: inline-block;
+	line-height: 40px;
+}
+#new_top .close{
+	position: absolute;
+	top: 0px;
+	right: 20px;
+	font-size: 25px;
+}
+#new_top .close:hover{
+	cursor: pointer;
+	color: red;
+}
+.pop_win form{
+	overflow: hidden;
+}
+#div1{
+	position: absolute;
+	top: 80px;
+	left: 40px;
+	font-size: 18px;
+}
+#div1 input{
+	height: 25px;
+	border-radius: 8px;
+	border: 1px solid black;
+	outline:none;
+}
+#div2{
+	position: absolute;
+	top: 130px;
+	left: 40px;
+	font-size: 18px;
+}
+#div3{
+	position: absolute;
+	top: 190px;
+	left: 40px;
+	font-size: 18px;
+}
+.pop_win #themes{
+	height: 40px;
+	border-radius: 10px;
+}
+#div3 span{
+	position: relative;
+	bottom: 160px;
+}
+#div3 textarea{
+	resize:none;
+	width: 600px;
+	height: 350px;
+	font-size: 16px;
+}
+#div4{
+	position: absolute;
+	bottom: 30px;
+	left: 250px;
+}
+#div4 span{
+	display: inline-block;
+	width: 80px;
+	height: 30px;
+	border: 1px black solid;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 30px;
+}
+#submit{
+	margin-right: 160px;
+}
+#div4 span:hover{
+	background-color: orange;
+	color: white;
+	cursor: pointer;
+}
+#contain ul{
+	overflow:hidden;
+}
+#contain ul li{
+	float:left;
+	margin: 40px;
+}
+#contain ul li a{
+	color:#000;
+	text-decoration:none;
+	background:#fff8b6;
+	display:block;
+	height:212px;
+	width:220px;
+	line-height: 24px;
+	padding:1em;
+	box-shadow:5px 5px 7px rgba(33,33,33,7);
+	transform:rotate(-6deg);
+    transition:-webkit-transform .15s linear;
+    margin-left: 40px;
+	overflow: hidden;
+	border-radius: 10%;
+	position: relative;
+}
+#contain ul li h2{
+	font-size: 26px;
+	font-weight:bold;
+	padding-bottom:10px;
+	font-family: "方正舒体";
+}
+#contain ul li p{
+	font-size: 16px;
+}
+#con_class{
+	font-size: 8px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+#time{
+	font-size: 8px;
+	position: absolute;
+	top: 30px;
+	right: 10px;
+}
+#contain{
+	font-size:110%;
+}
+#contain ul li:nth-child(odd) a{
+	transform:rotate(-4deg);
+	position:relative;
+	top:5px;
+}
+#contain ul li:nth-child(3n) a{
+	transform:rotate(5deg);
+	position:relative;
+	top:5px;
+  background:#cfc;
+}
+#contain ul li:nth-child(5n) a{
+	transform:rotate(7deg);
+	position:relative;
+	top:5px;
+	background:#ccf;
+}
+#contain ul li a:hover,#contain ul li a:focus{
+	webkit-box-shadow:10px 10px 7px rgba(0,0,0,7);
+	box-shadow:10px 10px 7px rgba(0,0,0,7);
+	transform:scale(1.25);
+	position:relative;
+	z-index:5;
+}
+/*提示框样式*/
+.message-dialog {
+    font-size: 1rem;
+    position: relative;
+}
+/*提示框遮罩样式 */
+.message-dialog-conver {
+    width: 100%;
+    height: 100%;
+    z-index: 500;
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+	text-align: end;
+}
+/* 主体样式 */
+.message-dialog-main {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    top: 50%;
+    z-index: 600;
+    width: 100%;
+    left: 100%;
+    transform: translate(-100%, -100%);
+}
+/* 标题样式 */
+.message-dialog-header {
+	display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 255);
+    width: 86%;
+    height: 2rem;
+    line-height: 2rem;
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
+}
+/* 内容样式 */
+.message-dialog-content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 86%;
+    background: rgba(255, 255, 255, 255);
+    padding: 0.5rem 0;
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3)
+}
+/* 底部样式 */
+.message-dialog-footer {
+    width: 86%;
+    height: 2.5rem;
+}
+.message-dialog-btn {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 255);
+    border-bottom-left-radius: 0.6rem;
+    border-bottom-right-radius: 0.6rem;
+    border-top: 0.01rem solid #d5d6d7;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+.message-dialog-sure,.message-dialog-cancel {
+    display: block;
+   	width: 10%;
+    text-align: center;
+    cursor: pointer;
+    height: 2rem;
+    line-height: 2rem;
+    border-radius: 0.3rem;
+    margin: 0 1rem;
+    color: #ffff;
+    border: none;
+    letter-spacing: .6px;
+    background-color: #d6d6d6;
+}     
+.message-dialog-sure {
+    color: #212122;
+    border: none;
+    background-color: #449d44;
+}   
+.message-dialog-close {
+    cursor: pointer;
+    color: #347d4a;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+}

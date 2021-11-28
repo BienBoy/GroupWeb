@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>树洞-其他</title>
+	<link href="../pictures/title.ico" type="image/x-icon" rel="shortcut icon" />
+	<link rel="stylesheet" type="text/css" href="../CSS/主要.css">
+	<script src="../JavaScript/主要.js"></script>
+</head>
+<body background="../pictures/背景.jpg" style=" background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;">
+	<nav onselectstart="return false;">
+		<div class="wal">
+			<a href=""  id="nav_left">网站名称</a>
+			<ul>
+				<li><a href="">学院简介</a></li>
+				<li><a href="">活动</a></li>
+				<li><a href="../../学习事务/HTML/学习事务-成绩查询.html">学习事务</a></li>
+				<li><a href="../../树洞/HTML/全部.html">树洞</a></li>
+				<li id="nav_right"><a href="">印迹</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div class="content" id="main">
+		<div id="title" onselectstart="return false;">
+			<h1>诉说心声，慰藉心灵</h1>
+		</div>
+		<div id="class">
+			<ul>
+				<li id="left" webClass = "全部"><a href="全部.html">全部</a></li>
+				<li webClass = "疑惑解答"><a href="疑惑解答.html">疑惑解答</a></li>
+				<li webClass = "心意表白"><a href="心意表白.html">心意表白</a></li>
+				<li webClass = "不满吐槽"><a href="不满吐槽.html">不满吐槽</a></li>
+				<li webClass = "寻人寻物"><a href="寻人寻物.html">寻人寻物</a></li>
+				<li webClass = "其他" class="now"><a href="其他.html">其他</a></li>
+				<li id="publish">我要发表</li>
+			</ul>
+		</div>
+		<!-- 发表窗口 -->
+		<div id="light" class="pop_win">
+			<div id="new_top">
+				<h2>你的心事</h2>
+            	<div class="close">×</div>
+			</div>
+			<div id="div1">
+            	<span>昵称：</span>
+            	<input type="text" id="nickname" placeholder="长度应不超过四个字符" maxlength="4">
+            </div>
+            <div id="div2">
+            	<span>类型：</span>
+            		<select id="themes">
+            			<option value="choice">请选择要发表的类型</option>
+            			<option value="puzzle">疑惑解答</option>
+            			<option value="love">心意表白</option>
+            			<option value="dissatisfied">不满吐槽</option>
+            			<option value="find">寻人寻物</option>
+            			<option value="else">其他</option>
+            		</select>
+            	</div>
+            <div id="div3">
+            	<span>内容：</span>
+            	<textarea placeholder="诉说你的心事" id="content"></textarea>
+            </div>
+            <div id="div4">
+            	<span id="submit">发表</span>
+            	<span class="close">关闭</span>
+            </div>
+        </div>
+        <div id="fade" class="black_overlay"></div>
+        <!-- 提示框添加位置 -->
+        <div id="message"></div>
+        <div id="success"></div>
+		<div id="contain">
+			<ul id="contain_ul">
+			</ul>
+		</div>
+	</div>
+
+</body>
+</html>
