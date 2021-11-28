@@ -1,0 +1,309 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<link href="主页/CSS/webstyle.css" rel="stylesheet" type="text/css" />
+<title>传源书院</title>
+<link rel="stylesheet" href="主页/CSS/1.css">
+  <style type="text/css">
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    a{
+      text-decoration: none;
+    }
+    ul{
+      list-style: none;
+    }
+    /*版心*/
+    p{
+      width: 1200px;
+      margin: 0 auto;
+    }
+    nav{
+      position: fixed;
+        z-index: 50;
+        left: 0;
+        top: 0.05rem;
+        width: 100%;
+        overflow: hidden;
+    }
+    nav:before{
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        top: -.05rem;
+        right: 0;
+        height: 80px;
+        background: url(https://www.tsinghua.edu.cn/image/head-bg.png) center repeat-x;
+        background-size: auto 99%;
+    }
+    nav .wal{
+      min-height: 1.1rem;
+        position: relative;
+        max-width: 100%;
+        margin: 0 .4rem;
+    }
+    nav ul{
+      overflow: hidden;
+      float: right;
+    }
+    nav li{
+      float: left;
+      margin-left: 40px;
+      height: 80px;
+      text-align: center;
+    }
+    nav li a{
+      color: white;
+      line-height: 80px;
+    }
+    nav li a:hover{
+      color: orange;
+    }
+    #nav_left{
+      float: left;
+      color: white;
+      line-height: 80px;
+      font-size: 24px;
+      margin-left: 100px;
+    }
+    #nav_right{
+      margin-right: 100px;
+    }
+  </style>
+<link rel="stylesheet" href="主页/CSS/slick.css">
+<link rel="stylesheet" href="主页/CSS/aos.css" />
+<script src="主页/JavaScript/jquery.min.js"></script>
+<script src="主页/JavaScript/slick.min.js"></script>
+<script type="text/javascript" src="主页/JavaScript/jquery.superslide.2.1.1.js"></script>
+<script type="text/javascript" src="主页/JavaScript/png.js"></script>
+
+<script>
+PNG.fix('*');
+</script>
+</head>
+<body>
+  <nav class="content">
+    <div class="wal">
+      <a href=""  id="nav_left">传源书院</a>
+      <ul>
+        <li><a href="">学院简介</a></li>
+        <li><a href="">活动</a></li>
+        <li><a href="">学习事务</a></li>
+        <li><a href="">树洞</a></li>
+        <li id="nav_right"><a href="">印迹</a></li>
+      </ul>
+    </div>
+  </nav>
+  <script type="text/javascript">
+    $(document).ready(function(e) {
+    $("#tubiao").bind("click",function (){
+        $("#ceng").toggle(500);
+        var height=$(window).height();
+      $("#ceng").css(document.body.scrollHeight);
+        })
+        $("#close").bind("click",function (){
+        $("#ceng").toggle(500);        
+        })
+    });
+</script> 
+  </div>
+  
+  <!--结束-->
+  <div class="cl"></div>
+</div>
+
+<script>
+function adjust() {
+  var hei=$(".slick-slide img").height();
+  $(".opt2").css("height",hei);
+  };
+window.onload=function(){
+  window.onresize = adjust;  
+   adjust();
+};
+</script>
+<div class="slick opt2">
+<div><a href="javascript:;"><img src="主页/pictures/4.jpg" alt="幻灯一（1663PX*431PX）" width="100%"></a></div><div><a href=""><img src="主页/pictures/2.jpg" alt="幻灯二（1663PX*431PX）" width="100%"></a></div>  
+</div>
+<script>
+$(function(){
+    $('.opt2').slick({
+        dots:false,
+    autoplay:true,
+    autoplaySpeed:4000
+    });
+});
+</script> 
+<!--header end--> 
+
+<!--index start-->
+<div class="container" >
+  <div class="group"aos="fade-up" aos-easing="ease" aos-delay="200">
+    <div class="group_l fl">近期动态<span>/ Recent News</span></div>
+    <div class="group_r fr">
+      <ul>
+      
+        <li><a href="javascript:;">学习动态</a></li>
+       
+        <li><a href="javascript:;">文体活动</a></li>
+       
+        <li><a href="javascript:;">有关通知</a></li>
+          
+        <li class="haden"><a style="padding:0" href="javascript:;"><img onmousemove="src='主页/pictures/pic_10.jpg'" onmouseout="src='主页/pictures/xinxin.jpg'" src="主页/pictures/xinxin.jpg" > </a></li>
+      </ul>
+    </div>
+    <div class="cl"></div>
+  </div>
+  <div class="group_list" aos="fade-up" aos-easing="ease" aos-delay="200">
+    <ul>
+    <li aos="fade-left" aos-duration='1500' aos-easing="ease" aos-delay=""><a href="javascript:;"><img src="" width="378" height="230">
+        <div class="group_border">
+          <div class="group_pad">
+            <div>新闻1</div>
+            <span>简介</span> </div>
+          <div class="group_more">more </div>
+        </div>
+        </a></li>
+<li aos="fade-left" aos-duration='1500' aos-easing="ease" aos-delay=""><a href="javascript:;"><img src="" width="378" height="230">
+        <div class="group_border">
+          <div class="group_pad">
+            <div>新闻2</div>
+            <span>简介</span> </div>
+          <div class="group_more">more </div>
+        </div>
+        </a></li>
+<li aos="fade-left" aos-duration='1500' aos-easing="ease" aos-delay=""><a href="javascript:;"><img src="" width="378" height="230">
+        <div class="group_border">
+          <div class="group_pad">
+            <div>新闻3</div>
+            <span>简介</span> </div>
+          <div class="group_more">more </div>
+        </div>
+        </a></li>
+  
+      <div class="cl"></div>
+    </ul>
+    <!--2018-01-30-->
+    <div class="xin_more" aos="fade-up" aos-once="true" aos-easing="ease" aos-delay="200"><a href="javascript:;">more</a></div>
+    <!--2018-01-30--> 
+  </div>
+</div>
+<div class="about min_w" aos="fade-up" aos-easing="ease" aos-delay="200">
+  <div class="container about_wid">
+    <div class="about_l">
+      <div class="about_tit">关于传源</div>
+      <div class="about_en">ABOUT US</div>
+      <div class="about_con"> 一些学院简介</div>
+    </div>
+    <div class="about_r">
+      <div class="slideBox">
+        <div class="bd">
+          <ul>
+            <li><a href="javascript:;" target="_blank"><img src="主页/pictures/3.jpg" width="554" height="324" /></a></li>
+          </ul>
+        </div>
+       </div>
+    </div>
+  </div>
+  <div aos="fade-up" aos-once="true" aos-easing="ease" aos-delay="200">
+    <div class="about_p">
+      <div class="group_l fl">关于传源<span>/ ABOUT US</span></div>
+      <div class="about_p_1"><img src="主页/pictures/3.jpg"></div>
+      <div class="about_p_wid"> 一些学院简介</div>
+      <div class="xin_more"><a href="javascript:;">more</a></div>
+    </div>
+  </div>
+</div>
+<div class="talent min_w" aos="fade-up" aos-easing="ease" aos-delay="200">
+<div class="container">
+  <div class="group" aos="fade-up" aos-easing="ease" aos-delay="200">
+    <div class="group_l fl">书院大事记<span>/ HISTORY</span></div>
+    <div class="group_r fr group_r_list">
+      
+    </div>
+    <div class="cl"></div>
+  </div>
+  <div class="new_l fl" aos="fade-up" aos-easing="ease" aos-delay="200"> <a href="javascript:;"> <img src="主页/pictures/我们的生活.jpg" width="584" height="263">
+    <div class="new_height">
+      <div class="new_l_time fl">
+        <div>2021</div>
+        <span>12-01</span> </div>
+      <div class="new_l_title fl">
+        <div>未完待续......</div>
+        <span>行而不辍，未来可期！</span> </div>
+      <div class="cl"></div>
+    </div>
+    </a> </div>
+   
+  <div class="new_r fr" aos="fade-up" aos-easing="ease" aos-delay="200">
+    <ul>
+     <li><a href="https://mp.weixin.qq.com/s/qEoxrwaRvc9-BYiK3T0_rQ">
+        <div class="new_data fl">
+          <div>2021</div>
+          <span>09-07</span></div>
+        <div class="new_text fr">
+          <div>传源书院第一批新生开学</div>
+          <span>第一批行小缘步入了北航的校门，传源书院正式启航！</span> </div>
+        <div class="cl"></div>
+        </a></li>
+<li><a href="https://mp.weixin.qq.com/s/gbV4KWxfp0v83OuW25BvZQ">
+        <div class="new_data fl">
+          <div>2021</div>
+          <span>09-11</span></div>
+        <div class="new_text fr">
+          <div>传源书院新生启航礼</div>
+          <span>开学的第一课，行小缘们意气风发</span> </div>
+        <div class="cl"></div>
+        </a></li>
+<li><a href="https://mp.weixin.qq.com/s/VG5ZVR7ti-jahE4tFYyJ3A">
+        <div class="new_data fl">
+          <div>2021</div>
+          <span>10-08</span></div>
+        <div class="new_text fr">
+          <div>传源党建工作坊正式成立</div>
+          <span>学习理论,坚定信念。牢记宗旨,勇挑重担。艰苦朴素,勤奋好学。严以律己,争做模范！</span> </div>
+        <div class="cl"></div>
+        </a></li>
+     
+    </ul>
+  </div>
+  <script>
+$(function(){
+  $('.oktlw2').slick({
+    dots: true,
+    autoplay:true,
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    arrows:false
+  });
+});
+$(function(){
+  $('.oktlw').slick({
+    dots: true,
+    autoplay:true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    arrows:false
+  });
+});
+
+</script> 
+</div> 
+<script data-cfasync="false" src="主页/JavaScript/email-decode.min.js"></script><script src="主页/JavaScript/aos.js"></script> 
+<script>
+        AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+        });
+    </script> 
+<!--footer end-->
+
+</body>
+</html>

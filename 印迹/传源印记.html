@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating</title>
+    <link rel="stylesheet" href="CSS/jarallax.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css" />
+    <link rel="stylesheet" href="CSS/style.css">
+    <style>
+.uploadImgBtn {
+width: 100px;
+height: 100px;
+cursor: pointer;
+position: relative;
+background: url("上传.png") no-repeat;
+-webkit-background-size: cover;
+background-size: cover;
+}
+
+.uploadImgBtn .uploadImg {
+position: absolute;
+right: 0;
+top:0;
+width: 100%;
+height: 100%;
+opacity: 0;
+cursor: pointer;
+}
+/* //这是一个用做回显的盒子的样式 */
+.pic{
+left: 500px;
+float: right;
+max-width: 350px;
+max-height: 350px;
+padding: 20px 30px;
+}
+.pic img:hover{
+  opacity: 75%;
+}
+.pic img {
+width: 100%;
+border: 4px solid white;
+}
+    </style>
+</head>
+<body>
+  <script src="JavaScript/jquery-2.1.0.min.js"></script>
+    <section class="section1">
+        <div class="box">
+            <h2 class="spring" data-jarallax-element="0 -200">春</h2>
+            <div class="container">
+                <div class="imgBx jarallax">
+                    <img src="pictures/bg1.jpg" class="jarallax-img">
+                </div>
+                <div class="content">
+                    <p>   
+                        我喜欢春天的花 夏天的树 秋天的黄昏。   
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section1">
+        <div class="box">
+            <h2 class="summer" data-jarallax-element="0 200">夏</h2>
+            <div class="container">
+                <div class="imgBx jarallax">
+                    <img src="pictures/b2.jpg" class="jarallax-img">
+                </div>
+                <div class="content">
+                    <p>
+                        绿树阴浓夏日长，楼台倒影入池塘
+                    </p>
+                </div>
+            </div>
+        </div>    
+    </section>
+    <section class="section1">
+        <div class="box">
+            <h2 class="fall" data-jarallax-element="0 -200">秋</h2>
+            <div class="container">
+                <div class="imgBx jarallax">
+                    <img src="pictures/bg3.jpg" class="jarallax-img">
+                </div>
+                <div class="content">
+                    <p>
+                        遇见你 才让艳阳大雨 春夏秋冬 <br>
+                        被赋予新的意义。
+                    </p>
+                </div>
+            </div>
+        </div>   
+    </section>
+    <section class="section1">
+        <div class="box">
+            <h2 class="winter" data-jarallax-element="0 200">冬</h2>
+            <div class="container">
+                <div class="imgBx jarallax">
+                    <img src="pictures/bg4.jpg" class="jarallax-img">
+                </div>
+                <div class="content">
+                    <p>
+                        彼春花香 此夏尤伤 今秋已凉 来冬甚慌，<br> 这时光 恰如我思念你的模样。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="JavaScript/jarallax.js">   </script>
+    <script src="JavaScript/jarallax-element.js"></script>
+    <script type="text/javascript">
+        jarallax(document.querySelectorAll('.jarallax'), {
+            speed: 0.382
+        });
+    </script>
+          <nav class="content">
+            <div class="wal">
+              <a  href=""  id="nav_left"><img class="chuanyuan" src="传源书院.png" width="150px" height="100px" alt="">传源书院</a>
+              <ul>
+                <li><a href="">学院简介</a></li>
+                <li><a href="">活动</a></li>
+                <li><a href="">学习事务</a></li>
+                <li><a href="">树洞</a></li>
+                <li id="nav_right"><a href="">印迹</a></li>
+              </ul>
+            </div>
+          </nav>
+         </div>  
+    <section class="section" id="projects">
+          <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="section-heading">
+                        <h1>传源印记</h1>
+                    </div>
+                    <div class="filters">
+                        <ul>
+                            <li class="active" data-filter="*">All</li>
+                            <li data-filter=".des">我们的生活</li>
+                            <li data-filter=".dev">志愿实践交流</li>
+                            <li data-filter=".gra">活动</li>
+                            <li data-filter=".tsh">联欢</li>
+                            <div class="uploadImgBtn" id="uploadImgBtn">
+                              <input class="uploadImg " type="file" name="file" multiple id="file">
+                          </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="filters-content">
+                        <div class="row grid">
+                            <div class="col-md-4 all des">
+                              <div class="item">
+                                <a href="pictures/落叶-1.jpg".png" data-lightbox="image-1" data-title="Our Projects"><img src="pictures/落叶-1.jpg" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all dev">
+                              <div class="item">
+                                <a href="pictures/志愿实践交流-1.jpg" data-lightbox="image-1" data-title="Our Projects"><img src="pictures/志愿实践交流-1.jpg" alt=""></a>
+                              </div>
+                            </div>
+                            
+                            <div class="col-md-4 all gra">
+                              <div class="item">
+                                <a href="pictures/活动-1.jpg" data-lightbox="image-1" data-title="活动"><img src="pictures/活动-1.jpg" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all dev">
+                              <div class="item">
+                                <a href="pictures/志愿实践交流-2.jpg" data-lightbox="image-1" data-title="志愿实践交流"><img src="pictures/志愿实践交流-2.jpg" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all gra">
+                              <div class="item">
+                                <a href="pictures/活动-2.jpg" data-lightbox="image-1" data-title="活动"><img src="pictures/活动-2.jpg" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all tsh">
+                              <div class="item">
+                                <a href="pictures/联欢-10.jpg" data-lightbox="image-1" data-title="联欢"><img src="pictures/联欢-10.jpg" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all gra">
+                              <div class="item">
+                                <a href="pictures/活动-3.jpg" data-lightbox="image-1" data-title="活动"><img src="pictures/活动-4.jpg" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all dev">
+                              <div class="item">
+                                <a href="pictures/志愿实践交流-10.jpg" data-lightbox="image-1" data-title="志愿实践交流"><img src="pictures/志愿实践交流-10.jpg" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all tsh">
+                              <div class="item">
+                                <a href="pictures/联欢-9.jpg" data-lightbox="image-1" data-title="联欢"><img src="pictures/联欢-9.jpg" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all tsh">
+                              <div class="item">
+                                <a href="pictures/联欢-11.jpg" data-lightbox="image-1" data-title="联欢"><img src="pictures/联欢-11.jpg" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all des">
+                              <div class="item">
+                                <a href="pictures/图片-1.jpg" data-lightbox="image-1" data-title="我们的生活"><img src="pictures/图片-1.jpg" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all tsh">
+                              <div class="item">
+                                <a href="pictures/联欢-7.jpg" data-lightbox="image-1" data-title="联欢"><img src="pictures/联欢-7.jpg" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all tsh">
+                              <div class="item">
+                              
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </section>
+      </div>
+<script>
+$(document).ready(function(){
+    //为外面的盒子绑定一个点击事件
+    $("#uploadImgBtn").click(function(){
+        /*
+        1、先获取input标签
+        2、给input标签绑定change事件
+        3、把图片回显
+         */
+//            1、先回去input标签
+        var $input = $("#file");
+        console.log($input)
+//            2、给input标签绑定change事件
+        $input.on("change" , function(){
+            console.log(this)
+            //补充说明：因为我们给input标签设置multiple属性，因此一次可以上传多个文件
+            //获取选择图片的个数
+            var files = this.files;
+            var length = files.length;
+            console.log("选择了"+length+"张图片");
+            //3、回显
+            $.each(files,function(key,value){
+                //每次都只会遍历一个图片数据
+                var div = document.createElement("div"),
+                    img = document.createElement("img");
+                div.className = "pic";
+                var fr = new FileReader();
+                fr.onload = function(){
+                    img.src=this.result;
+                    div.appendChild(img);
+                    document.body.appendChild(div);
+                }
+                fr.readAsDataURL(value);
+            })
+
+        })
+
+        //4、我们把当前input标签的id属性remove
+        $input.removeAttr("id");
+        //我们做个标记，再class中再添加一个类名就叫test
+        var newInput = '<input class="uploadImg test" type="file" name="file" multiple id="file">';
+        $(this).append($(newInput));
+    })
+})
+</script>  
+         <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script>
+
+        (function ($) {
+          "use strict";
+          $('.filters ul li').click(function(){
+            $('.filters ul li').removeClass('active');
+            $(this).addClass('active');
+            var data = $(this).attr('data-filter');
+            $grid.isotope({
+              filter: data
+            })
+          });
+          var $grid = $(".grid").isotope({
+            itemSelector: ".all",
+            percentPosition: true,
+            masonry: {
+              columnWidth: ".all"
+            }
+          })      
+      })(window.jQuery);
+          </script>
+      
+</body>
+</html>
