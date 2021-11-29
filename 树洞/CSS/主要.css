@@ -15,27 +15,27 @@ ul{
 }
 nav{
 	position: fixed;
-    z-index: 50;
-    left: 0;
+	z-index: 50;
+  	left: 0;
     top: 0.05rem;
     width: 100%;
 }
 nav:before{
-    content: "";
+  	content: "";
    	display: block;
-  	position: absolute;
-    left: 0;
-   	top: -.05rem;
-    right: 0;
+   	position: absolute;
+  	left: 0;
+    top: -.05rem;
+  	right: 0;
     height: 80px;
     background: url(https://www.tsinghua.edu.cn/image/head-bg.png) center repeat-x;
     background-size: auto 99%;
 }
 nav .wal{
 	min-height: 1.1rem;
-   	position: relative;
-   	max-width: 100%;
-	margin: 0 .4rem;
+	position: relative;
+	max-width: 100%;
+    margin: 0 .4rem;
 }
 .wal span{
 	font-family: "华文新魏";
@@ -50,14 +50,14 @@ nav ul{
 }
 nav li{
 	float: left;
-	margin-left: 40px;
-	height: 80px;
-	text-align: center;
-	position: relative;
 }
 nav li a{
-	color: white;
+	display: block;
+	width: 100px;
+	height: 80px;
 	line-height: 80px;
+	color: white;
+	text-align: center;
 }
 nav li a:hover{
 	color: orange;
@@ -72,42 +72,31 @@ nav li a:hover{
 #nav_right{
 	margin-right: 100px;
 }
+.dropdown{
+	position: relative;
+	display: block;
+}
 .list{
-	position: fixed;
+	position: absolute;
+	top: 60px;
     z-index: 10;
     background: #ececec;
     width: 100px;
-    border: #EE9640 solid 1px;
     text-align: center;
     display: none;
 }
 .list a{
 	display: block;
 	color: black;
+	height: 50px;
 	line-height: 50px;
 }
 .list a:hover{
 	background-color: #e4e4e4;
 	color: orange;
 }
-li:hover .list{
+.dropdown:hover .list{
    	display: block;
-}
-#list1{
-	top: 60px;
-	left: 885px;
-}
-#list2{
-	top: 60px;
-	left: 990px;
-}
-#list3{
-	top: 60px;
-	left: 1090px;
-}
-#list4{
-	top: 60px;
-	left: 1180px;
 }
 #main{
 	margin-top: 80px;
