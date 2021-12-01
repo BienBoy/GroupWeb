@@ -7,94 +7,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 <link href="主页/CSS/webstyle.css" rel="stylesheet" type="text/css" />
 <title>传源书院</title>
+<link href="主页/pictures/title.ico" type="image/x-icon" rel="shortcut icon" />
 <link rel="stylesheet" href="主页/CSS/1.css">
-  <style type="text/css">
-    nav{
-      position: fixed;
-        z-index: 50;
-        left: 0;
-        top: 0.05rem;
-        width: 100%;
-    }
-    nav:before{
-        content: "";
-        display: block;
-        position: absolute;
-        left: 0;
-        top: -.05rem;
-        right: 0;
-        height: 80px;
-        background: url(https://www.tsinghua.edu.cn/image/head-bg.png) center repeat-x;
-        background-size: auto 99%;
-    }
-    nav .wal{
-      min-height: 1.1rem;
-        position: relative;
-        max-width: 100%;
-        margin: 0 .4rem;
-    }
-    .wal span{
-      font-family: "华文新魏";
-      font-size: 40px;
-    }
-    .wal img{
-      position: relative;
-      top: 12px;
-    }
-    nav ul{
-      float: right;
-    }
-    nav li{
-      float: left;
-    }
-    nav li a{
-      display: block;
-      width: 100px;
-      height: 80px;
-      line-height: 80px;
-      color: white;
-      text-align: center;
-    }
-    nav li a:hover{
-      color: orange;
-    }
-    #nav_left{
-      float: left;
-      color: white;
-      line-height: 80px;
-      font-size: 24px;
-      margin-left: 100px;
-    }
-    #nav_right{
-      margin-right: 100px;
-    }
-    .dropdown{
-      position: relative;
-      display: block;
-    }
-    .list{
-      position: absolute;
-      top: 60px;
-        z-index: 10;
-        background: #ececec;
-        width: 100px;
-        text-align: center;
-        display: none;
-    }
-    .list a{
-      display: block;
-      color: black;
-      height: 50px;
-      line-height: 50px;
-    }
-    .list a:hover{
-      background-color: #e4e4e4;
-      color: orange;
-    }
-    .dropdown:hover .list{
-        display: block;
-    }
-  </style>
 <link rel="stylesheet" href="主页/CSS/slick.css">
 <link rel="stylesheet" href="主页/CSS/aos.css" />
 <script src="主页/JavaScript/jquery.min.js"></script>
@@ -108,129 +22,130 @@ PNG.fix('*');
 </head>
 <body>
   <nav onselectstart="return false;">
-    <div class="wal">
-      <a href="index.html"  id="nav_left">
-        <img src="logo.png">
-        <span>传源书院</span>
-      </a>
-      <ul>
-        <li>
-          <div class="dropdown">
-            <a href="简介/HTML/院长寄语.html">书院概览</a>
-            <div class="list">
-              <div>
-                <a href="简介/HTML/院长寄语.html">
-                院长寄语
-                </a>
-              </div>
-              <div>
-                <a href="简介/HTML/书院介绍.html">
-                书院介绍
-                </a>
-              </div>
-              <div>
-                <a href="简介/HTML/书院行政.html">
-                  书院行政
-                </a>
-              </div>
-              <div>
-                <a href="简介/HTML/学生组织.html">
-                  学生组织
-                </a>
-              </div>
+            <div class="wal">
+                  <a href="index.html"  id="nav_left">
+                        <img src="主页/pictures/logo.png">
+                        <span>传源书院</span>
+                  </a>
+                  <ul>
+                        <li>
+                              <div class="dropdown">
+                                    <a href="书院总览/HTML/院长寄语.html">书院总览</a>
+                                    <div class="list">
+                                          <div>
+                                                <a href="书院总览/HTML/院长寄语.html">
+                                                院长寄语
+                                                </a>
+                                          </div>
+                                          <div>
+                                                <a href="书院总览/HTML/书院介绍.html">
+                                                书院介绍
+                                                </a>
+                                          </div>
+                                          <div>
+                                                <a href="书院总览/HTML/书院行政.html">
+                                                      书院行政
+                                                </a>
+                                          </div>
+                                          <div>
+                                                <a href="书院总览/HTML/学生组织.html">
+                                                      学生组织
+                                                </a>
+                                          </div>
+                                    </div>
+                              </div>
+                        </li>
+                        <li>
+                              <div class="dropdown">
+                                    <a href="书院新闻/HTML/综合新闻.html">书院新闻</a>
+                                    <div class="list">
+                                          <div>
+                                                <a href="书院新闻/HTML/综合新闻.html">
+                                                综合新闻
+                                                </a>
+                                          </div>
+                                          <div>
+                                                <a href="书院新闻/HTML/通知公告.html">
+                                                通知公告
+                                                </a>
+                                          </div>
+                                          <div>
+                                                <a href="书院新闻/HTML/活动预告.html">
+                                                      活动预告
+                                                </a>
+                                          </div>
+                                    </div>
+                              </div>
+                        </li>
+                        <li>
+                              <div class="dropdown">
+                                    <a href="学习事务/HTML/学习事务-成绩查询.html">学习事务</a>
+                                    <div class="list" id="list3">
+                                          <div>
+                                                <a href="学习事务/HTML/学习事务-成绩查询.html">
+                                                      成绩查询
+                                                </a>
+                                          </div>
+                                          <div>
+                                                <a href="学习事务/HTML/学习事务-课表查询.html">
+                                                      课表查询
+                                                </a>
+                                          </div>
+                                          <div>
+                                                <a href="学习事务/HTML/学习事务-资料下载.html">
+                                                      资料下载
+                                                </a>
+                                          </div>
+                                          <div>
+                                                <a href="学习事务/HTML/学习事务-课程推荐.html">
+                                                      课程推荐
+                                                </a>
+                                          </div>
+                                    </div>
+                              </div>
+                        </li>
+                        <li>
+                              <div class="dropdown">
+                                    <a href="树洞/HTML/全部.html">树洞</a>
+                                    <div class="list">
+                                          <div>
+                                                <a href="树洞/HTML/全部.html">
+                                                      全部
+                                                </a>
+                                          </div>
+                                          <div>
+                                                <a href="树洞/HTML/疑惑解答.html">
+                                                      疑惑解答
+                                                </a>
+                                          </div>
+                                          <div>
+                                                <a href="树洞/HTML/心意表白.html">
+                                                      心意表白
+                                                </a>
+                                          </div>
+                                          <div>
+                                                <a href="树洞/HTML/不满吐槽.html">
+                                                      不满吐槽
+                                                </a>
+                                          </div>
+                                          <div>
+                                                <a href="树洞/HTML/寻人寻物.html">
+                                                      寻人寻物
+                                                </a>
+                                          </div>
+                                          <div>
+                                                <a href="树洞/HTML/其他.html">
+                                                      其他
+                                                </a>
+                                          </div>
+                                    </div>
+                              </div>
+                        </li>
+                        <li id="nav_right"><a href="印迹/传源印记.html">印迹</a></li>
+                  </ul>
             </div>
-          </div>
-        </li>
-        <li>
-          <div class="dropdown">
-            <a href="活动/HTML/综合新闻.html">书院新闻</a>
-            <div class="list">
-              <div>
-                <a href="活动/HTML/综合新闻.html">
-                综合新闻
-                </a>
-              </div>
-              <div>
-                <a href="活动/HTML/通知公告.html">
-                通知公告
-                </a>
-              </div>
-              <div>
-                <a href="活动/HTML/活动预告.html">
-                  活动预告
-                </a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="dropdown">
-            <a href="学习事务/HTML/学习事务-成绩查询.html">学习事务</a>
-            <div class="list" id="list3">
-              <div>
-                <a href="学习事务/HTML/学习事务-成绩查询.html">
-                  成绩查询
-                </a>
-              </div>
-              <div>
-                <a href="学习事务/HTML/学习事务-课表查询.html">
-                  课表查询
-                </a>
-              </div>
-              <div>
-                <a href="学习事务/HTML/学习事务-资料下载.html">
-                  资料下载
-                </a>
-              </div>
-              <div>
-                <a href="学习事务/HTML/学习事务-课程推荐.html">
-                  课程推荐
-                </a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="dropdown">
-            <a href="树洞/HTML/全部.html">树洞</a>
-            <div class="list">
-              <div>
-                <a href="树洞/HTML/全部.html">
-                  全部
-                </a>
-              </div>
-              <div>
-                <a href="树洞/HTML/疑惑解答.html">
-                  疑惑解答
-                </a>
-              </div>
-              <div>
-                <a href="树洞/HTML/心意表白.html">
-                  心意表白
-                </a>
-              </div>
-              <div>
-                <a href="树洞/HTML/不满吐槽.html">
-                  不满吐槽
-                </a>
-              </div>
-              <div>
-                <a href="树洞/HTML/寻人寻物.html">
-                  寻人寻物
-                </a>
-              </div>
-              <div>
-                <a href="树洞/HTML/其他.html">
-                  其他
-                </a>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li id="nav_right"><a href="印迹/传源印记.html">印迹</a></li>
-      </ul>
-    </div>
-  </nav>
+      </nav>
+
   <script type="text/javascript">
     $(document).ready(function(e) {
     $("#tubiao").bind("click",function (){
@@ -293,27 +208,27 @@ $(function(){
   </div>
   <div class="group_list" aos="fade-up" aos-easing="ease" aos-delay="200">
     <ul>
-    <li aos="fade-left" aos-duration='1500' aos-easing="ease" aos-delay=""><a href="javascript:;"><img src="" width="378" height="230">
+    <li aos="fade-left" aos-duration='1500' aos-easing="ease" aos-delay=""><a href="https://mp.weixin.qq.com/s/3zCg-4O_LDzCjFfS-ow0EA"><img src="书院新闻/pictures/新闻1.jpg" width="378" height="230">
         <div class="group_border">
           <div class="group_pad">
-            <div>新闻1</div>
-            <span>简介</span> </div>
+            <div>传源党建 | 传源党建工作坊第五次党课</div>
+            <span>11月21日晚，传源书院党建工作坊第五次党课于主楼201教室顺利举行，书院辅导员、党建工作坊干事和234名新学员一同参加了课程。</span> </div>
           <div class="group_more">more </div>
         </div>
         </a></li>
-<li aos="fade-left" aos-duration='1500' aos-easing="ease" aos-delay=""><a href="javascript:;"><img src="" width="378" height="230">
+<li aos="fade-left" aos-duration='1500' aos-easing="ease" aos-delay=""><a href="https://mp.weixin.qq.com/s/ET0odCeK4Mzv7NkOhMh2Rw"><img src="书院新闻/pictures/新闻3.jfif" width="378" height="230">
         <div class="group_border">
           <div class="group_pad">
-            <div>新闻2</div>
-            <span>简介</span> </div>
+            <div>情感调查 | 爱情问卷结果新鲜出炉啦！</div>
+            <span>本学期的最后一次上机完结撒花了，不知道同学们是否还记得，双十一前一天书院发的情感状况调查问卷？没错！本次问卷调查结果终于出炉了！</span> </div>
           <div class="group_more">more </div>
         </div>
         </a></li>
-<li aos="fade-left" aos-duration='1500' aos-easing="ease" aos-delay=""><a href="javascript:;"><img src="" width="378" height="230">
+<li aos="fade-left" aos-duration='1500' aos-easing="ease" aos-delay=""><a href="https://mp.weixin.qq.com/s/ePNmKwoAIusZx8Y0n7w4JQ"><img src="书院新闻/pictures/新闻2.png" width="378" height="230">
         <div class="group_border">
           <div class="group_pad">
-            <div>新闻3</div>
-            <span>简介</span> </div>
+            <div>摄影大赛 | 相识·选张美景，给我最爱的人</div>
+            <span>摄影大赛自征稿日以来，我们便收到了大家的踊跃来稿，经过初步遴选，现正式启动投票环节。快让我们欣赏一下各个赛道选手的精彩表现吧！</span> </div>
           <div class="group_more">more </div>
         </div>
         </a></li>
@@ -321,7 +236,7 @@ $(function(){
       <div class="cl"></div>
     </ul>
     <!--2018-01-30-->
-    <div class="xin_more" aos="fade-up" aos-once="true" aos-easing="ease" aos-delay="200"><a href="javascript:;">more</a></div>
+    <div class="xin_more" aos="fade-up" aos-once="true" aos-easing="ease" aos-delay="200"><a href="书院总览/HTML/书院介绍.html">more</a></div>
     <!--2018-01-30--> 
   </div>
 </div>
@@ -330,13 +245,13 @@ $(function(){
     <div class="about_l">
       <div class="about_tit">关于传源</div>
       <div class="about_en">ABOUT US</div>
-      <div class="about_con"> 一些学院简介</div>
+      <div class="about_con"> 2021年，大类招生首届本科生毕业之际，北航成立新书院：隶属工科试验班类（信息类），9月将迎来首批519名本科新生，书院名为——传源书院，系号71，以我国航空航天领域著名教育家、科学家，飞行器控制、制导与仿真学界泰斗、北航立德树人最高荣誉获得者——文传源先生命名。2019年10月1日，文传源先生与世长辞。先生钟爱的事业北航人定将传承光大！为了纪念文传源先生、传承先生严谨治学、锲而不舍、开拓创新、勇攀高峰的精神，北航决定成立传源书院。</div>
     </div>
     <div class="about_r">
       <div class="slideBox">
         <div class="bd">
           <ul>
-            <li><a href="javascript:;" target="_blank"><img src="主页/pictures/3.jpg" width="554" height="324" /></a></li>
+            <li><a href="书院总览/HTML/书院介绍.html" target="_blank"><img src="主页/pictures/3.jpg" width="554" height="324" /></a></li>
           </ul>
         </div>
        </div>
@@ -347,7 +262,7 @@ $(function(){
       <div class="group_l fl">关于传源<span>/ ABOUT US</span></div>
       <div class="about_p_1"><img src="主页/pictures/3.jpg"></div>
       <div class="about_p_wid"> 一些学院简介</div>
-      <div class="xin_more"><a href="javascript:;">more</a></div>
+      <div class="xin_more"><a href="简介/HTML/书院介绍.html">more</a></div>
     </div>
   </div>
 </div>
@@ -398,7 +313,7 @@ $(function(){
           <span>10-08</span></div>
         <div class="new_text fr">
           <div>传源党建工作坊正式成立</div>
-          <span>学习理论,坚定信念。牢记宗旨,勇挑重担。艰苦朴素,勤奋好学。严以律己,争做模范！</span> </div>
+          <span>学习理论，坚定信念。牢记宗旨，勇挑重担。艰苦朴素，勤奋好学。严以律己，争做模范！</span> </div>
         <div class="cl"></div>
         </a></li>
      

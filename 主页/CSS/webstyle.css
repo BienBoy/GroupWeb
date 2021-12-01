@@ -94,7 +94,110 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
     height: 580px;
 
 }
-
+    *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul{
+            list-style: none;
+        }
+        /*p{
+            width: 1200px;
+            margin: 0 auto;
+            line-height: 40px;
+            font-size: 18px;
+            text-indent: 36px;
+        }*/
+        nav{
+            position: fixed;
+            z-index: 50;
+            left: 0;
+            top: 0.05rem;
+            width: 100%;
+        }
+        nav:before{
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            top: -.05rem;
+            right: 0;
+            height: 80px;
+            background: url(https://www.tsinghua.edu.cn/image/head-bg.png) center repeat-x;
+            background-size: auto 99%;
+        }
+        nav .wal{
+            min-height: 1.1rem;
+            position: relative;
+            max-width: 100%;
+            margin: 0 .4rem;
+        }
+        .wal span{
+            font-family: "华文新魏";
+            font-size: 40px;
+        }
+        .wal img{
+            position: relative;
+            top: 12px;
+            vertical-align: top;
+        }
+        nav ul{
+            float: right;
+        }
+        nav li{
+            float: left;
+        }
+        nav li a{
+            display: block;
+            width: 100px;
+            height: 80px;
+            line-height: 80px;
+            color: white;
+            text-align: center;
+            font-size: 16px;
+        }
+        nav li a:hover{
+            color: orange;
+        }
+        #nav_left{
+            float: left;
+            color: white;
+            line-height: 80px;
+            font-size: 24px;
+            margin-left: 100px;
+        }
+        #nav_right{
+            margin-right: 100px;
+        }
+        .dropdown{
+            position: relative;
+            display: block;
+        }
+        .list{
+            position: absolute;
+            top: 60px;
+            z-index: 10;
+            background: #ececec;
+            width: 100px;
+            text-align: center;
+            display: none;
+        }
+        .list a{
+            display: block;
+            color: black;
+            height: 50px;
+            line-height: 50px;
+        }
+        .list a:hover{
+            background-color: #e4e4e4;
+            color: orange;
+        }
+        .dropdown:hover .list{
+            display: block;
+        }
 .nav {
    transition: margin-left 0.5s linear;
 }
@@ -171,7 +274,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 	text-align: center;
 	font-size: 14px;
 	height: 103px;
-	background: url(../images/pic_01.jpg) no-repeat left center;
+	background: url(../pictures/pic_01.jpg) no-repeat left center;
 	padding: 0 8px;
 }
 .nav>ul>li>a {
@@ -180,20 +283,20 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 	line-height: 103px;
 	display: block;
 	width: 102px;
-	background: url(../images/pic_02.jpg) no-repeat center -104px;
+	background: url(../pictures/pic_02.jpg) no-repeat center -104px;
 	transition: 0.3s linear;
 	-webkit-transition: 0.3s linear;
 }
 .nav>ul>li:hover>a {
 	color: #fff;
-	background: url(../images/pic_02.jpg) no-repeat center center;
+	background: url(../pictures/pic_02.jpg) no-repeat center center;
 }
 .nav>ul>li:first-child {
 	background: none;
 }
 /*index*/
 .group_l {
-	background: url(../images/pic_09.jpg) no-repeat left bottom;
+	background: url(../pictures/pic_09.jpg) no-repeat left bottom;
 	line-height: 75px;
 	margin-top: 37px;
 	font-size: 22px;
@@ -209,7 +312,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .group_r li {
 	padding: 0 24px;
 	float: left;
-	background: url(../images/pic_01.jpg) no-repeat left center;
+	background: url(../pictures/pic_01.jpg) no-repeat left center;
 }
 .group_r li:first-child {
 	background: none;
@@ -301,7 +404,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 	width: 77px;
 	height: 29px;
 	line-height: 29px;
-	background: url(../images/pic_04.jpg) no-repeat center;
+	background: url(../pictures/pic_04.jpg) no-repeat center;
 }
 .group_list li:hover .group_more {
 	border-radius: 17px;
@@ -312,7 +415,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 	padding-bottom: 7%;
 	margin-top: 84px;
 	padding-top: 84px;
-	background: url(../images/pic_05.jpg) no-repeat center top;
+	background: url(../pictures/pic_05.jpg) no-repeat center top;
 }
 .about_l {
 	padding: 40px 236px 0 44px;
@@ -334,7 +437,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .about_con {
 	font-size: 16px;
 	color: #fff;
-	background: url(../images/pic_07.jpg) no-repeat left bottom;
+	background: url(../pictures/pic_07.jpg) no-repeat left bottom;
 	line-height: 37px;
 	margin-top: 19px;
 	padding-bottom: 23px;
@@ -381,17 +484,17 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 }
 .slideBox .prev {
 	right: 42px;
-	background: url(../images/p5.png) no-repeat;
+	background: url(../pictures/p5.png) no-repeat;
 }
 .slideBox .next {
 	right: 0px;
-	background: url(../images/p6.png) no-repeat;
+	background: url(../pictures/p6.png) no-repeat;
 }
 .slideBox .prev:hover {
-	background: url(../images/p7.png) no-repeat;
+	background: url(../pictures/p7.png) no-repeat;
 }
 .slideBox .next:hover {
-	background: url(../images/p8.png) no-repeat;
+	background: url(../pictures/p8.png) no-repeat;
 }
 .slideBox .prevStop {
 	display: none;
@@ -400,7 +503,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 	display: none;
 }
 .talent {
-	background: url(../images/pic_08.jpg) center center;
+	background: url(../pictures/pic_08.jpg) center center;
 	min-height: 226px;
 }
 .talent_l {
@@ -422,7 +525,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .talent_r {
 	height: 226px;
 	width: 770px;
-	background: url(../images/pic_21.jpg) no-repeat right bottom;
+	background: url(../pictures/pic_21.jpg) no-repeat right bottom;
 }
 .talent_wid {
 	width: 360px;
@@ -452,6 +555,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 	background: #f5f5f5;
 	width: 584px;
 	margin-top: 39px;
+	margin-bottom: 200px;
 }
 .new_l_time {
 	margin: 0 0 0 20px;
@@ -473,7 +577,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .new_l_title {
 	padding-left: 20px;
 	width: 435px;
-	background: url(../images/pic_12.jpg) no-repeat left 33px;
+	background: url(../pictures/pic_12.jpg) no-repeat left 33px;
 }
 .new_l_title div {
 	line-height: 28px;
@@ -533,7 +637,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .new_text {
 	width: 450px;
 	padding-left: 20px;
-	background: url(../images/pic_12.jpg) no-repeat left 33px;
+	background: url(../pictures/pic_12.jpg) no-repeat left 33px;
 }
 .new_text div {
 	font-size: 18px;
@@ -552,11 +656,11 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 	color: #fff;
 }
 .new_r li:hover .new_text {
-	background: url(../images/pic_14.jpg) no-repeat left 33px;
+	background: url(../pictures/pic_14.jpg) no-repeat left 33px;
 }
 .culture {
 	padding-top: 149px;
-	background: url(../images/pic_15.jpg) no-repeat center top;
+	background: url(../pictures/pic_15.jpg) no-repeat center top;
 	margin-top: 84px;
 }
 .cuture_l {
@@ -566,7 +670,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 	height: 344px;
 }
 .cuture_r {
-	background: url(../images/pic_27.jpg) no-repeat;
+	background: url(../pictures/pic_27.jpg) no-repeat;
 	width: 344px;
 	height: 344px;
 }
@@ -593,7 +697,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 	text-transform: uppercase;
 	font-size: 14px;
 	color: #a2a2a2;
-	background: url(../images/pic_16.jpg) no-repeat center center;
+	background: url(../pictures/pic_16.jpg) no-repeat center center;
 	width: 77px;
 	height: 30px;
 	line-height: 30px;
@@ -623,7 +727,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 	font-weight: bold;
 	line-height: 45px;
 	padding-bottom: 14px;
-	background: url(../images/pic_20.jpg) no-repeat left bottom;
+	background: url(../pictures/pic_20.jpg) no-repeat left bottom;
 }
 .contact_first {
 	height: 66px;
@@ -677,7 +781,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 /*footer*/
 .foot {
 	height: 470px;
-	background: url(../images/pic_33.jpg) no-repeat center center;
+	background: url(../pictures/pic_33.jpg) no-repeat center center;
 	margin-top: 52px;
 }
 .foot_line {
@@ -759,7 +863,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 /*产品中心*/
 .pro {
 	padding-top: 238px;
-	background: url(../images/pic_25.jpg) no-repeat center top;
+	background: url(../pictures/pic_25.jpg) no-repeat center top;
 }
 .pro_wid {
 	padding-left: 63px;
@@ -826,7 +930,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 }
 /*关于我们*/
 .pro2 {
-	background: url(../images/pic_28.jpg) no-repeat center top;
+	background: url(../pictures/pic_28.jpg) no-repeat center top;
 }
 .pro_about {
 	border-bottom: 1px dotted #dfdede;
@@ -853,7 +957,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 .pro_about_list li {
 	float: left;
 	width: 400px;
-	background: url(../images/pic_29.jpg) no-repeat left center;
+	background: url(../pictures/pic_29.jpg) no-repeat left center;
 	text-align: center;
 }
 .pro_about_list li:first-child {
@@ -901,7 +1005,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 }
 /*联系我们*/
 .prous {
-	background: url(../images/pic_31.jpg) no-repeat center top;
+	background: url(../pictures/pic_31.jpg) no-repeat center top;
 }
 .pro_us {
 	width: 847px;
@@ -957,7 +1061,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 }
 /*企业文化*/
 .procom {
-	background: url(../images/pic_34.jpg) no-repeat center top;
+	background: url(../pictures/pic_34.jpg) no-repeat center top;
 }
 .pro_company {
 	width: 1160px;
@@ -989,7 +1093,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 }
 /*新闻中心*/
 .pro_center {
-	background: url(../images/pic_36.jpg) no-repeat center top;
+	background: url(../pictures/pic_36.jpg) no-repeat center top;
 }
 .center {
 	padding-top: 25px;
@@ -1051,7 +1155,7 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 	-webkit-transition: 0.3s linear;
 }
 .about {
-	background: url(../images/pic_05.jpg) no-repeat center top fixed;
+	background: url(../pictures/pic_05.jpg) no-repeat center top fixed;
 	background-size: 100% 100%;
 }
 .new_r li {
@@ -1059,12 +1163,12 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus {
 	-webkit-transition: 0.3s linear;
 }
 .about_con {
-	background: url(../images/pic_07.jpg) no-repeat -100px bottom;
+	background: url(../pictures/pic_07.jpg) no-repeat -100px bottom;
 	transition: 0.5s linear;
 	-webkit-transition: 0.5s linear;
 }
 .about_l:hover .about_con {
-	background: url(../images/pic_07.jpg) no-repeat left bottom;
+	background: url(../pictures/pic_07.jpg) no-repeat left bottom;
 	background-size: 100px 2px;
 }
 /*xinjia*/
@@ -1266,7 +1370,7 @@ body {
 }
 .talent_r {
 	width: 100%;
-	background: url(../images/pic_21.jpg) no-repeat right bottom #1c87eb;
+	background: url(../pictures/pic_21.jpg) no-repeat right bottom #1c87eb;
 }
 .group_l {
 	margin-left: 3%;
@@ -1295,12 +1399,12 @@ body {
 }
 .slick-prev {
 	left: 3% !important;
-	background: url(../images/p1.png) no-repeat;
+	background: url(../pictures/p1.png) no-repeat;
 	background-size: 100% 100% !important;
 }
 .slick-next {
 	right: 3% !important;
-	background: url(../images/p2.png) no-repeat;
+	background: url(../pictures/p2.png) no-repeat;
 	background-size: 100% 100% !important;
 }
 .oktlw {
@@ -1310,7 +1414,7 @@ body {
 	display: none !important;
 }
 .pro {
-	background: url(../images/pic_25.jpg) no-repeat center top;
+	background: url(../pictures/pic_25.jpg) no-repeat center top;
 	background-size: 100%;
 	padding-top: 13%;
 }
@@ -1361,11 +1465,11 @@ body {
 	padding-top: 3%;
 }
 .pro2 {
-	background: url(../images/pic_28.jpg) no-repeat center top;
+	background: url(../pictures/pic_28.jpg) no-repeat center top;
 	background-size: 100%;
 }
 .prous {
-	background: url(../images/pic_31.jpg) no-repeat center top;
+	background: url(../pictures/pic_31.jpg) no-repeat center top;
 	background-size: 100%;
 }
 .pro_i {
@@ -1377,7 +1481,7 @@ body {
 	padding: 0 4%;
 }
 .procom {
-	background: url(../images/pic_34.jpg) no-repeat center top;
+	background: url(../pictures/pic_34.jpg) no-repeat center top;
 	background-size: 100%;
 }
 .pro_company img {
@@ -1389,7 +1493,7 @@ body {
 	float: none;
 }
 .pro_center {
-	background: url(../images/pic_36.jpg) no-repeat center top;
+	background: url(../pictures/pic_36.jpg) no-repeat center top;
 	background-size: 100%;
 }
 .center li {
@@ -1414,7 +1518,7 @@ body {
 }
 .talent_r {
 	width: 100%;
-	background: url(../images/pic_21.jpg) no-repeat right bottom #278be9;
+	background: url(../pictures/pic_21.jpg) no-repeat right bottom #278be9;
 	background-size: 48%;
 }
 /*2018-01-30*/
@@ -1426,7 +1530,7 @@ body {
 	text-align: center;
 	width: 100%;
 	margin: 4% auto 0 auto;
-	background: url(../images/pic_09.jpg) no-repeat center bottom;
+	background: url(../pictures/pic_09.jpg) no-repeat center bottom;
 	padding-bottom: 2%;
 }
 .group_l span {
@@ -1521,7 +1625,7 @@ body {
 	padding-top: 5%;
 }
 .new_text {
-	background: url(../images/pic_12.jpg) no-repeat left center;
+	background: url(../pictures/pic_12.jpg) no-repeat left center;
 }
 .culture {
 	background: none;
@@ -1540,7 +1644,7 @@ body {
 	margin: 5% 8% 0 8%;
 	display: block;
 	float: none;
-	background: url(../images/pic_27.jpg) no-repeat;
+	background: url(../pictures/pic_27.jpg) no-repeat;
 	background-size: 100% 100%;
 }
 .foot {
@@ -1657,19 +1761,19 @@ body {
 .culture_more {
 	border-radius: 19px;
 	overflow: hidden;
-	background: url(../images/pic_111.jpg) no-repeat left -35px;
+	background: url(../pictures/pic_111.jpg) no-repeat left -35px;
 	transition: 0.4s linear;
 	-webkit-transition: 0.4s linear;
 }
 .culture_more:hover {
-	background: url(../images/pic_111.jpg) no-repeat center center;
+	background: url(../pictures/pic_111.jpg) no-repeat center center;
 }
 .culture_more a {
-	background: url(../images/p888.png) no-repeat 60px center;
+	background: url(../pictures/p888.png) no-repeat 60px center;
 }
 .culture_more:hover a {
 	color: #fff;
-	background: url(../images/p889.png) no-repeat 60px center;
+	background: url(../pictures/p889.png) no-repeat 60px center;
 }
 .group_list li .group_border {
 	transition: 0.4s linear;

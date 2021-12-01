@@ -4,50 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creating</title>
+    <title>传源印记</title>
     <link rel="stylesheet" href="CSS/jarallax.css">
+    <link href="pictures/title.ico" type="image/x-icon" rel="shortcut icon" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css" />
     <link rel="stylesheet" href="CSS/style.css">
-    <style>
-.uploadImgBtn {
-width: 100px;
-height: 100px;
-cursor: pointer;
-position: relative;
-background: url("上传.png") no-repeat;
--webkit-background-size: cover;
-background-size: cover;
-}
-
-.uploadImgBtn .uploadImg {
-position: absolute;
-right: 0;
-top:0;
-width: 100%;
-height: 100%;
-opacity: 0;
-cursor: pointer;
-}
-/* //这是一个用做回显的盒子的样式 */
-.pic{
-left: 500px;
-float: right;
-max-width: 350px;
-max-height: 350px;
-padding: 20px 30px;
-}
-.pic img:hover{
-  opacity: 75%;
-}
-.pic img {
-width: 100%;
-border: 4px solid white;
-}
-    </style>
 </head>
-<body>
+<body background="pictures/bg .jpg" style=" background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;">
   <script src="JavaScript/jquery-2.1.0.min.js"></script>
     <section class="section1">
         <div class="box">
@@ -58,8 +23,9 @@ border: 4px solid white;
                 </div>
                 <div class="content">
                     <p>   
-                        我喜欢春天的花 夏天的树 秋天的黄昏。   
+                        我喜欢春天的花   
                     </p>
+                    <p>夏天的树 秋天的黄昏。 </p>
                 </div>
             </div>
         </div>
@@ -73,8 +39,9 @@ border: 4px solid white;
                 </div>
                 <div class="content">
                     <p>
-                        绿树阴浓夏日长，楼台倒影入池塘
+                        绿树阴浓夏日长，
                     </p>
+                    <p>楼台倒影入池塘</p>
                 </div>
             </div>
         </div>    
@@ -88,7 +55,7 @@ border: 4px solid white;
                 </div>
                 <div class="content">
                     <p>
-                        遇见你 才让艳阳大雨 春夏秋冬 <br>
+                        遇见你 <br>才让艳阳大雨 春夏秋冬 <br>
                         被赋予新的意义。
                     </p>
                 </div>
@@ -103,9 +70,9 @@ border: 4px solid white;
                     <img src="pictures/bg4.jpg" class="jarallax-img">
                 </div>
                 <div class="content">
-                    <p>
-                        彼春花香 此夏尤伤 今秋已凉 来冬甚慌，<br> 这时光 恰如我思念你的模样。
-                    </p>
+                    <p>彼春花香 此夏尤伤 <br>
+                       今秋已凉 来冬甚慌，<br> 这时光 <br> 恰如我思念你的模样。</p> 
+                    
                 </div>
             </div>
         </div>
@@ -117,25 +84,138 @@ border: 4px solid white;
             speed: 0.382
         });
     </script>
-          <nav class="content">
-            <div class="wal">
-              <a  href=""  id="nav_left"><img class="chuanyuan" src="传源书院.png" width="150px" height="100px" alt="">传源书院</a>
-              <ul>
-                <li><a href="">学院简介</a></li>
-                <li><a href="">活动</a></li>
-                <li><a href="">学习事务</a></li>
-                <li><a href="">树洞</a></li>
-                <li id="nav_right"><a href="">印迹</a></li>
-              </ul>
-            </div>
-          </nav>
-         </div>  
+  <nav onselectstart="return false;">
+    <div class="wal">
+          <a href="../index.html"  id="nav_left">
+                <img src="pictures/logo.png">
+                <span>传源书院</span>
+          </a>
+          <ul>
+                <li>
+                      <div class="dropdown">
+                            <a href="../书院总览/HTML/院长寄语.html">书院总览</a>
+                            <div class="list">
+                                  <div>
+                                        <a href="../书院总览/HTML/院长寄语.html">
+                                        院长寄语
+                                        </a>
+                                  </div>
+                                  <div>
+                                        <a href="../书院总览/HTML/书院介绍.html">
+                                        书院介绍
+                                        </a>
+                                  </div>
+                                  <div>
+                                        <a href="../书院总览/HTML/书院行政.html">
+                                              书院行政
+                                        </a>
+                                  </div>
+                                  <div>
+                                        <a href="../书院总览/HTML/学生组织.html">
+                                              学生组织
+                                        </a>
+                                  </div>
+                            </div>
+                      </div>
+                </li>
+                <li>
+                      <div class="dropdown">
+                            <a href="../书院新闻/HTML/综合新闻.html">书院新闻</a>
+                            <div class="list">
+                                  <div>
+                                        <a href="../书院新闻/HTML/综合新闻.html">
+                                        综合新闻
+                                        </a>
+                                  </div>
+                                  <div>
+                                        <a href="../书院新闻/HTML/通知公告.html">
+                                        通知公告
+                                        </a>
+                                  </div>
+                                  <div>
+                                        <a href="../书院新闻/HTML/活动预告.html">
+                                              活动预告
+                                        </a>
+                                  </div>
+                            </div>
+                      </div>
+                </li>
+                <li>
+                      <div class="dropdown">
+                            <a href="../学习事务/HTML/学习事务-成绩查询.html">学习事务</a>
+                            <div class="list" id="list3">
+                                  <div>
+                                        <a href="../学习事务/HTML/学习事务-成绩查询.html">
+                                              成绩查询
+                                        </a>
+                                  </div>
+                                  <div>
+                                        <a href="../学习事务/HTML/学习事务-课表查询.html">
+                                              课表查询
+                                        </a>
+                                  </div>
+                                  <div>
+                                        <a href="../学习事务/HTML/学习事务-资料下载.html">
+                                              资料下载
+                                        </a>
+                                  </div>
+                                  <div>
+                                        <a href="../学习事务/HTML/学习事务-课程推荐.html">
+                                              课程推荐
+                                        </a>
+                                  </div>
+                            </div>
+                      </div>
+                </li>
+                <li>
+                      <div class="dropdown">
+                            <a href="../树洞/HTML/全部.html">树洞</a>
+                            <div class="list">
+                                  <div>
+                                        <a href="../树洞/HTML/全部.html">
+                                              全部
+                                        </a>
+                                  </div>
+                                  <div>
+                                        <a href="../树洞/HTML/疑惑解答.html">
+                                              疑惑解答
+                                        </a>
+                                  </div>
+                                  <div>
+                                        <a href="../树洞/HTML/心意表白.html">
+                                              心意表白
+                                        </a>
+                                  </div>
+                                  <div>
+                                        <a href="../树洞/HTML/不满吐槽.html">
+                                              不满吐槽
+                                        </a>
+                                  </div>
+                                  <div>
+                                        <a href="../树洞/HTML/寻人寻物.html">
+                                              寻人寻物
+                                        </a>
+                                  </div>
+                                  <div>
+                                        <a href="../树洞/HTML/其他.html">
+                                              其他
+                                        </a>
+                                  </div>
+                            </div>
+                      </div>
+                </li>
+                <li id="nav_right"><a href="../印迹/传源印记.html">印迹</a></li>
+          </ul>
+    </div>
+</nav>
+
     <section class="section" id="projects">
           <div class="container">
             <div class="row">
                 <div class="col-lg-3">
                     <div class="section-heading">
                         <h1>传源印记</h1>
+                        <h2>在这里，留下属于我们的印记....</h2>
                     </div>
                     <div class="filters">
                         <ul>
@@ -155,12 +235,128 @@ border: 4px solid white;
                         <div class="row grid">
                             <div class="col-md-4 all des">
                               <div class="item">
-                                <a href="pictures/落叶-1.jpg".png" data-lightbox="image-1" data-title="Our Projects"><img src="pictures/落叶-1.jpg" alt=""></a>
+                                <a href="pictures/落叶-1.jpg".png" data-lightbox="image-1" data-title="我们的生活"><img src="pictures/落叶-1.jpg" alt=""></a>
                               </div>
                             </div>
-                            <div class="col-md-4 all dev">
+ 
+                            <div class="col-md-4 all des">
                               <div class="item">
-                                <a href="pictures/志愿实践交流-1.jpg" data-lightbox="image-1" data-title="Our Projects"><img src="pictures/志愿实践交流-1.jpg" alt=""></a>
+                                <a href="pictures/传源印记1.png".png" data-lightbox="image-1" data-title="我们的生活"><img src="pictures/传源印记1.png" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all des">
+                              <div class="item">
+                                <a href="pictures/传源印记2.png".png" data-lightbox="image-1" data-title="我们的生活"><img src="pictures/传源印记2.png" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all des">
+                              <div class="item">
+                                <a href="pictures/传源印记3.png".png" data-lightbox="image-1" data-title="我们的生活"><img src="pictures/传源印记3.png" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all des">
+                              <div class="item">
+                                <a href="pictures/传源印记4.png".png" data-lightbox="image-1" data-title="我们的生活"><img src="pictures/传源印记4.png" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all des">
+                              <div class="item">
+                                <a href="pictures/传源印记5.png".png" data-lightbox="image-1" data-title="我们的生活"><img src="pictures/传源印记6.png" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all des">
+                              <div class="item">
+                                <a href="pictures/传源印记7.png".png" data-lightbox="image-1" data-title="我们的生活"><img src="pictures/传源印记7.png" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all des">
+                              <div class="item">
+                                <a href="pictures/传源印记8.png".png" data-lightbox="image-1" data-title="我们的生活"><img src="pictures/传源印记8.png" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all des">
+                              <div class="item">
+                                <a href="pictures/传源印记9.png".png" data-lightbox="image-1" data-title="我们的生活"><img src="pictures/传源印记9.png" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all des">
+                              <div class="item">
+                                <a href="pictures/传源印记10.png".png" data-lightbox="image-1" data-title="我们的生活"><img src="pictures/传源印记10.png" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all des">
+                              <div class="item">
+                                <a href="pictures/传源印记11.png".png" data-lightbox="image-1" data-title="我们的生活"><img src="pictures/传源印记11.png" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all des">
+                              <div class="item">
+                                <a href="pictures/传源印记12.png".png" data-lightbox="image-1" data-title="我们的生活"><img src="pictures/传源印记12.png" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all des">
+                              <div class="item">
+                                <a href="pictures/传源印记13.png".png" data-lightbox="image-1" data-title="我们的生活"><img src="pictures/传源印记13.png" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all des">
+                              <div class="item">
+                                <a href="pictures/传源印记14.png".png" data-lightbox="image-1" data-title="我们的生活"><img src="pictures/传源印记14.png" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all des">
+                              <div class="item">
+                                <a href="pictures/传源印记15.png".png" data-lightbox="image-1" data-title="我们的生活"><img src="pictures/传源印记15.png" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all des">
+                              <div class="item">
+                                <a href="pictures/传源印记16.png".png" data-lightbox="image-1" data-title="我们的生活"><img src="pictures/传源印记16.png" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all des">
+                              <div class="item">
+                                <a href="pictures/传源印记17.png".png" data-lightbox="image-1" data-title="我们的生活"><img src="pictures/传源印记17.png" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all des">
+                              <div class="item">
+                                <a href="pictures/传源印记18.png".png" data-lightbox="image-1" data-title="我们的生活"><img src="pictures/传源印记18.png" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all des">
+                              <div class="item">
+                                <a href="pictures/传源印记19.png".png" data-lightbox="image-1" data-title="我们的生活"><img src="pictures/传源印记19.png" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all des">
+                              <div class="item">
+                                <a href="pictures/传源印记20.png".png" data-lightbox="image-1" data-title="我们的生活"><img src="pictures/传源印记20.png" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all des">
+                              <div class="item">
+                                <a href="pictures/传源印记21.png".png" data-lightbox="image-1" data-title="我们的生活"><img src="pictures/传源印记21.png" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all des">
+                              <div class="item">
+                                <a href="pictures/传源印记22.png".png" data-lightbox="image-1" data-title="我们的生活"><img src="pictures/传源印记22.png" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all des">
+                              <div class="item">
+                                <a href="pictures/传源印记23.png".png" data-lightbox="image-1" data-title="我们的生活"><img src="pictures/传源印记23.png" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all des">
+                              <div class="item">
+                                <a href="pictures/传源印记24.png".png" data-lightbox="image-1" data-title="我们的生活"><img src="pictures/传源印记24.png" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all des">
+                              <div class="item">
+                                <a href="pictures/传源印记25.png".png" data-lightbox="image-1" data-title="我们的生活"><img src="pictures/传源印记25.png" alt=""></a>
                               </div>
                             </div>
                             
@@ -216,9 +412,105 @@ border: 4px solid white;
                             </div>
                             <div class="col-md-4 all tsh">
                               <div class="item">
-                              
+                                <a href="pictures/联欢-13.jpg" data-lightbox="image-1" data-title="联欢"><img src="pictures/联欢-13.jpg" alt=""></a>
                               </div>
                             </div>
+                            <div class="col-md-4 all dev">
+                              <div class="item">
+                                <a href="pictures/志愿实践交流-3.jpg" data-lightbox="image-1" data-title="志愿实践交流"><img src="pictures/志愿实践交流-3.jpg" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all dev">
+                              <div class="item">
+                                <a href="pictures/志愿实践交流-4.jpg" data-lightbox="image-1" data-title="志愿实践交流"><img src="pictures/志愿实践交流-4.jpg" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all dev">
+                              <div class="item">
+                                <a href="pictures/志愿实践交流-5.jpg" data-lightbox="image-1" data-title="志愿实践交流"><img src="pictures/志愿实践交流-5.jpg" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all gra">
+                              <div class="item">
+                                <a href="pictures/活动-3.jpg" data-lightbox="image-1" data-title="活动"><img src="pictures/活动-3.jpg" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all gra">
+                              <div class="item">
+                                <a href="pictures/活动-4.jpg" data-lightbox="image-1" data-title="活动"><img src="pictures/活动-4.jpg" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all gra">
+                              <div class="item">
+                                <a href="pictures/活动-5.jpg" data-lightbox="image-1" data-title="活动"><img src="pictures/活动-5.jpg" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all gra">
+                              <div class="item">
+                                <a href="pictures/活动-6.jpg" data-lightbox="image-1" data-title="活动"><img src="pictures/活动-6.jpg" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all dev">
+                              <div class="item">
+                                <a href="pictures/志愿实践交流-6.jpg" data-lightbox="image-1" data-title="志愿实践交流"><img src="pictures/志愿实践交流-6.jpg" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all gra">
+                              <div class="item">
+                                <a href="pictures/活动-6.jpg" data-lightbox="image-1" data-title="活动"><img src="pictures/活动-6.jpg" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all dev">
+                              <div class="item">
+                                <a href="pictures/志愿实践交流-7.jpg" data-lightbox="image-1" data-title="志愿实践交流"><img src="pictures/志愿实践交流-7.jpg" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all gra">
+                              <div class="item">
+                                <a href="pictures/活动-7.jpg" data-lightbox="image-1" data-title="活动"><img src="pictures/活动-7.jpg" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all dev">
+                              <div class="item">
+                                <a href="pictures/志愿实践交流-8.jpg" data-lightbox="image-1" data-title="志愿实践交流"><img src="pictures/志愿实践交流-8.jpg" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all gra">
+                              <div class="item">
+                                <a href="pictures/活动-8.jpg" data-lightbox="image-1" data-title="活动"><img src="pictures/活动-8.jpg" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all dev">
+                              <div class="item">
+                                <a href="pictures/志愿实践交流-9.jpg" data-lightbox="image-1" data-title="志愿实践交流"><img src="pictures/志愿实践交流-9.jpg" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all gra">
+                              <div class="item">
+                                <a href="pictures/活动-9.jpg" data-lightbox="image-1" data-title="活动"><img src="pictures/活动-9.jpg" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all dev">
+                              <div class="item">
+                                <a href="pictures/志愿实践交流-10.jpg" data-lightbox="image-1" data-title="志愿实践交流"><img src="pictures/志愿实践交流-10.jpg" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all gra">
+                              <div class="item">
+                                <a href="pictures/活动-10.jpg" data-lightbox="image-1" data-title="活动"><img src="pictures/活动-10.jpg" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all dev">
+                              <div class="item">
+                                <a href="pictures/志愿实践交流-11.jpg" data-lightbox="image-1" data-title="志愿实践交流"><img src="pictures/志愿实践交流-11.jpg" alt=""></a>
+                              </div>
+                            </div>
+                            <div class="col-md-4 all dev">
+                              <div class="item">
+                                <a href="pictures/志愿实践交流-1.jpg" data-lightbox="image-1" data-title="我们的生活"><img src="pictures/志愿实践交流-1.jpg" alt=""></a>
+                              </div>
+                            </div>
+                            
                         </div>
                     </div>
                     </div>
@@ -296,6 +588,5 @@ $(document).ready(function(){
           })      
       })(window.jQuery);
           </script>
-      
 </body>
 </html>

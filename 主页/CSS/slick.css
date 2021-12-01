@@ -25,7 +25,7 @@
 	outline: none;
 }
 .slick-loading .slick-list {
-	background: white url(../images/ajax-loader.gif) center center no-repeat;
+	background: white url(../pictures/ajax-loader.gif) center center no-repeat;
 }
 .slick-list.dragging {
 	cursor: pointer;
@@ -84,8 +84,8 @@
 /* Icons */
 @font-face {
 	font-family: "slick";
-	src: url("../images/slick.eot");
-	src: url(".../images/slick.eot") format("embedded-opentype"), url("../images/slick.woff") format("woff"), url("../images/slick.ttf") format("truetype"), url("../images/slick.svg#slick") format("svg");
+	src: url("../pictures/slick.eot");
+	src: url("../pictures/slick.eot") format("embedded-opentype"), url("../pictures/slick.woff") format("woff"), url("../pictures/slick.ttf") format("truetype"), url("../pictures/slick.svg#slick") format("svg");
 	font-weight: normal;
 	font-style: normal;
 }
@@ -122,14 +122,14 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 .slick-prev {
-	left: 45px; background:url(../images/p1.png) no-repeat;
+	left: 45px; background:url(../pictures/p1.png) no-repeat;
 }
-.slick-prev:hover { background:url(../images/p3.png) no-repeat;
+.slick-prev:hover { background:url(../pictures/p3.png) no-repeat;
 }
 .slick-next {
-	right:45px;background:url(../images/p2.png) no-repeat;
+	right:45px;background:url(../pictures/p2.png) no-repeat;
 }
-.slick-next:hover { background:url(../images/p4.png) no-repeat;
+.slick-next:hover { background:url(../pictures/p4.png) no-repeat;
 	
 }
 /* Dots */
