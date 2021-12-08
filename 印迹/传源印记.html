@@ -11,8 +11,154 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css" />
     <link rel="stylesheet" href="CSS/style.css">
+    <style>
+.uploadImgBtn {
+width: 100px;
+height: 100px;
+cursor: pointer;
+position: relative;
+background: url("上传.png") no-repeat;
+-webkit-background-size: cover;
+background-size: cover;
+}
+
+.uploadImgBtn .uploadImg {
+position: absolute;
+right: 0;
+top:0;
+width: 100%;
+height: 100%;
+opacity: 0;
+cursor: pointer;
+}
+/* //这是一个用做回显的盒子的样式 */
+.pic{
+left: 500px;
+float: right;
+max-width: 350px;
+max-height: 350px;
+padding: 20px 30px;
+}
+.pic img:hover{
+  opacity: 75%;
+}
+.pic img {
+width: 100%;
+border: 4px solid white;
+}
+.pic:hover{
+  opacity: 75%;
+}
+a:hover{
+  text-decoration: none;
+}
+*{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul{
+            list-style: none;
+        }
+        /*p{
+            width: 1200px;
+            margin: 0 auto;
+            line-height: 40px;
+            font-size: 18px;
+            text-indent: 36px;
+        }*/
+        nav{
+            position: fixed;
+            z-index: 50;
+            left: 0;
+            top: 0.05rem;
+            width: 100%;
+        }
+        nav:before{
+            content: "";
+            display: block;
+            position: absolute;
+            left: 0;
+            top: -.05rem;
+            right: 0;
+            height: 80px;
+            background: url(https://www.tsinghua.edu.cn/image/head-bg.png) center repeat-x;
+            background-size: auto 99%;
+        }
+        nav .wal{
+            min-height: 1.1rem;
+            position: relative;
+            max-width: 100%;
+            margin: 0 .4rem;
+        }
+        .wal span{
+            font-family: "华文新魏";
+            font-size: 40px;
+        }
+        .wal img{
+            position: relative;
+            top: 12px;
+            vertical-align: top;
+        }
+        nav ul{
+            float: right;
+        }
+        nav li{
+            float: left;
+        }
+        nav li a{
+            display: block;
+            width: 100px;
+            height: 80px;
+            line-height: 80px;
+            color: white;
+            text-align: center;
+            font-size: 16px;
+        }
+        nav li a:hover{
+            color: orange;
+        }
+        #nav_left{
+            float: left;
+            color: white;
+            line-height: 80px;
+            font-size: 24px;
+            margin-left: 100px;
+        }
+        #nav_right{
+            margin-right: 100px;
+        }
+        .dropdown{
+            position: relative;
+            display: block;
+        }
+        .list{
+            position: absolute;
+            top: 60px;
+            z-index: 10;
+            background: #ececec;
+            width: 100px;
+            text-align: center;
+            display: none;
+        }
+        .list a{
+            display: block;
+            color: black;
+            height: 50px;
+            line-height: 50px;
+        }
+        .list a:hover{
+            background-color: #e4e4e4;
+            color: orange;
+        }
+        .dropdown:hover .list{
+            display: block;
+        }
+    </style>
 </head>
-<body background="pictures/bg .jpg" style=" background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;">
+<body>
   <script src="JavaScript/jquery-2.1.0.min.js"></script>
     <section class="section1">
         <div class="box">
@@ -87,7 +233,7 @@
   <nav onselectstart="return false;">
     <div class="wal">
           <a href="../index.html"  id="nav_left">
-                <img src="pictures/logo.png">
+                <img src="../主页/pictures/logo.png">
                 <span>传源书院</span>
           </a>
           <ul>
